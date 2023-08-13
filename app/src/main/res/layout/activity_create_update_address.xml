@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tandoori.resturant.mobile.Activity.CreateUpdateAddressActivity">
+
+    <include layout="@layout/innertitlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cdDiplay_order"
+                app:cardBackgroundColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:elevation="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                >
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Theme.App.Base">
+
+                    <EditText
+                        android:id="@+id/etName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical"
+                        android:hint="@string/name"
+                        android:inputType="textPersonName"
+                        android:textAllCaps="false"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/_12ssp"
+                        android:theme="@style/Theme.App.Base" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:theme="@style/Theme.App.Base">
+
+                        <EditText
+                            android:id="@+id/etMiddleName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical"
+                            android:hint="@string/MiddleName"
+                            android:inputType="textPersonName"
+                            android:textAllCaps="false"
+                            android:textColorHint="@color/grey"
+                            android:textSize="@dimen/_12ssp"
+                            android:theme="@style/Theme.App.Base" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:theme="@style/Theme.App.Base">
+
+                        <EditText
+                            android:id="@+id/etLastName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical"
+                            android:hint="@string/LastName"
+                            android:inputType="textPersonName"
+                            android:textAllCaps="false"
+                            android:textColorHint="@color/grey"
+                            android:textSize="@dimen/_12ssp"
+                            android:theme="@style/Theme.App.Base" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Theme.App.Base">
+
+                    <EditText
+                        android:id="@+id/etPhone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical"
+                        android:hint="@string/phone_number"
+                        android:inputType="phone"
+                        android:textAllCaps="false"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/_12ssp"
+                        android:theme="@style/Theme.App.Base" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Theme.App.Base">
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:textAllCaps="false"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/_12ssp"
+                        android:theme="@style/Theme.App.Base" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:cardBackgroundColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:elevation="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Theme.App.Base">
+
+                    <EditText
+                        android:id="@+id/etAddress1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical"
+                        android:hint="@string/Address1"
+                        android:inputType="text"
+                        android:textAllCaps="false"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/_12ssp"
+                        android:theme="@style/Theme.App.Base" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Theme.App.Base">
+
+                    <EditText
+                        android:id="@+id/etAddress2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical"
+                        android:hint="@string/Address2"
+                        android:inputType="text"
+                        android:textAllCaps="false"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/_12ssp"
+                        android:theme="@style/Theme.App.Base" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:theme="@style/Theme.App.Base">
+
+                        <EditText
+                            android:id="@+id/etCountry"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:hint="@string/Country"
+                            android:textAllCaps="false"
+                            android:textColorHint="@color/grey"
+                            android:textSize="@dimen/_12ssp"
+                            android:theme="@style/Theme.App.Base" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:theme="@style/Theme.App.Base">
+
+                        <EditText
+                            android:id="@+id/etState"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical"
+                            android:hint="@string/state"
+                            android:focusable="false"
+                            android:lines="1"
+                            android:textAllCaps="false"
+                            android:textColorHint="@color/grey"
+                            android:textSize="@dimen/_12ssp"
+                            android:theme="@style/Theme.App.Base" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <!--
+                                    <AutoCompleteTextView
+                                        android:id="@+id/actvState"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center_horizontal"
+                                        android:gravity="center_vertical"
+                                        android:textSize="@dimen/_12ssp"
+                                        android:cursorVisible="false"
+                                        android:singleLine="true"
+                                        android:theme="@style/Theme.App.Base"
+                                        android:hint="@string/state"
+                                        android:lines="1"
+                                        android:textColor="@color/grey"
+                                        android:maxLines="1"
+                                        android:ellipsize="end"
+                                        android:textStyle="normal"
+                                        android:ems="10">
+
+                                    </AutoCompleteTextView>
+                -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:theme="@style/Theme.App.Base">
+
+                        <EditText
+                            android:id="@+id/etCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical"
+                            android:hint="@string/city"
+                            android:inputType="text"
+                            android:textAllCaps="false"
+                            android:textColorHint="@color/grey"
+                            android:textSize="@dimen/_12ssp"
+                            android:theme="@style/Theme.App.Base" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!--
+                                            <android.support.design.widget.TextInputLayout
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1"
+                                                android:theme="@style/Theme.App.Base"
+                                                android:layout_height="wrap_content">
+
+                                                <EditText
+                                                    android:id="@+id/etPostalCode"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center_horizontal"
+                                                    android:gravity="center_vertical"
+                                                    android:hint="@string/pincode"
+                                                    android:theme="@style/Theme.App.Base"
+                                                    android:inputType="number"
+                                                    android:textAllCaps="false"
+                                                    android:textColorHint="@color/grey"
+                                                    android:textSize="@dimen/_12ssp" />
+
+
+                                            </android.support.design.widget.TextInputLayout>
+                    -->
+
+                    <!--
+                                            <AutoCompleteTextView
+                                                android:id="@+id/actvCountry"
+                                                android:layout_width="0dp"
+                                                android:layout_weight="1"
+                                                android:cursorVisible="false"
+                                                android:layout_height="match_parent"
+                                                android:layout_gravity="center_horizontal"
+                                                android:gravity="center_vertical"
+                                                android:textSize="@dimen/_12ssp"
+                                                android:singleLine="true"
+                                                android:theme="@style/Theme.App.Base"
+                                                android:hint="@string/Country"
+                                                android:lines="1"
+                                                android:textColor="@color/grey"
+                                                android:maxLines="1"
+                                                android:ellipsize="end"
+                                                android:textStyle="normal"
+                                                android:ems="10">
+
+
+                                            </AutoCompleteTextView>
+                    -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:theme="@style/Theme.App.Base">
+
+                        <EditText
+                            android:id="@+id/etPostalCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical"
+                            android:hint="@string/pincode"
+                            android:inputType="number"
+                            android:textAllCaps="false"
+                            android:textColorHint="@color/grey"
+                            android:textSize="@dimen/_12ssp"
+                            android:theme="@style/Theme.App.Base" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:background="@drawable/button_background"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="tandoori.resturant.mobile.Activity.MyAddressesActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/titleBar"
+            layout="@layout/innertitlebar" />
+        <LinearLayout
+            android:id="@+id/lnStart_shopping"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/titleBar"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/imgEmpty"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/empty_address" />
+
+            <TextView
+                android:id="@+id/tvTag"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp" />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/lnOrdering_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/titleBar"
+            android:orientation="vertical">
+            <ListView
+                android:id="@+id/myAddressesListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="10.0sp"
+                android:visibility="visible"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabAddAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                app:backgroundTint="@color/green"
+                app:elevation="@dimen/_6sdp"
+                app:fabSize="normal"
+                app:pressedTranslationZ="@dimen/_12sdp"
+                app:srcCompat="@drawable/plus" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

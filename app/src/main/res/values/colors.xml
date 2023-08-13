@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FAFAFA</color>
+    <color name="black">#000000</color>
+    <color name="offblack">#99000000</color>
+    <color name="divider">#727272</color>
+    <color name="green">#7c1d24</color>
+    <color name="grey">#808080</color>
+    <color name="textColor">#ACACAC</color>
+    <color name="offWhite">#F5F1F0</color>
+    <color name="textgreen">#7c1d24</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#FF9800</color>
+    <color name="lightgrey">#50ACACAC</color>
+    <color name="disabled_color">#44000000</color>
+    <color name="error_color">#E7492E</color>
+    <color name="spinner_base_color">#44000000</color>
+    <color name="spinner_hint_text_color">#ffffcc</color>
+</resources>

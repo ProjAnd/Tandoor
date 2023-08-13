@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tandoori.resturant.mobile.Activity.PaymentActivity">
+
+    <include layout="@layout/innertitlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"/>
+
+        <!-- <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="@string/initialstate"
+             android:textSize="@dimen/_12ssp"
+             android:textColor="@color/black"/>
+
+     <com.stripe.android.view.CardInputWidget
+         android:id="@+id/cardInputWidget"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="@dimen/_5sdp"
+         android:theme="@style/CardWidgetStyle" />-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/cardnumber"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp" />
+
+        <com.stripe.android.view.CardInputWidget
+            android:id="@+id/cardInputWidget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:theme="@style/CardWidgetStyle" />
+        <!--
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entering_cvc"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@color/black"/>
+        -->
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/submitButton"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_gravity="center"
+        android:text="@string/submit" />
+
+
+</LinearLayout>

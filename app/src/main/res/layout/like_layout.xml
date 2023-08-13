@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.avr.tiffinsorderonline.likeButton.AndroidDotView
+        android:id="@+id/dotView"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="center" />
+
+    <com.avr.tiffinsorderonline.likeButton.AndroidCircleView
+        android:id="@+id/circleView"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:id="@+id/starImg"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_gravity="center" />
+
+</merge>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tandoori.resturant.mobile.Activity.MyAccountActivity">
+    <include layout="@layout/innertitlebar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/image_bg">
+
+            <tandoori.resturant.mobile.CircleImageView.CircleImageView
+                android:id="@+id/imUserImage"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:src="@drawable/user_icon"
+                tools:ignore="VectorDrawableCompat" />
+
+        </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_below="@+id/linearLayout"
+                android:id="@+id/lnEdit"
+                android:layout_above="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/_12sdp">
+<!--
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/account_owner"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_14ssp"/>
+-->
+
+              <!--  <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:theme="@style/Theme.App.Base">-->
+
+                    <EditText
+                        android:id="@+id/etName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical"
+                        android:hint="@string/name"
+                        android:theme="@style/Theme.App.Base"
+                        android:inputType="textPersonName"
+                        android:textAllCaps="false"
+                        android:cursorVisible="false"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/_12ssp"/>
+
+                        <EditText
+                            android:id="@+id/etMiddleName"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical"
+                            android:hint="@string/MiddleName"
+                            android:theme="@style/Theme.App.Base"
+                            android:inputType="textPersonName"
+                            android:textAllCaps="false"
+                            android:cursorVisible="false"
+                            android:textColorHint="@color/grey"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <EditText
+                            android:id="@+id/etLastName"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical"
+                            android:hint="@string/LastName"
+                            android:cursorVisible="false"
+                            android:theme="@style/Theme.App.Base"
+                            android:inputType="textPersonName"
+                            android:textAllCaps="false"
+                            android:textColorHint="@color/grey"
+                            android:textSize="@dimen/_12ssp" />
+                    <EditText
+                        android:id="@+id/etPhone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical"
+                        android:hint="@string/phone_number"
+                        android:inputType="phone"
+                        android:cursorVisible="false"
+                        android:textAllCaps="false"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/_12ssp"
+                        android:theme="@style/Theme.App.Base" />
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical"
+                        android:hint="@string/email"
+                        android:cursorVisible="false"
+                        android:theme="@style/Theme.App.Base"
+                        android:inputType="textEmailAddress"
+                        android:textAllCaps="false"
+                        android:textColorHint="@color/divider"
+                        android:textSize="@dimen/_12ssp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:text="@string/update"
+                android:textSize="@dimen/_12ssp"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/button_background"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

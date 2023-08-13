@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    android:orientation="vertical"
+    tools:context="tandoori.resturant.mobile.Activity.SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relativeMain"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_490sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:focusableInTouchMode="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginEnd="@dimen/_40sdp"
+                    android:layout_marginLeft="@dimen/_40sdp"
+                    android:layout_marginRight="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:id="@+id/lnName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_45sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilFirstName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/white">
+
+                        <EditText
+                            android:id="@+id/etFirstName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/white"
+                            android:drawableEnd="@drawable/username"
+                            android:drawableRight="@drawable/username"
+                            android:gravity="center_vertical"
+                            android:hint="@string/firstName"
+                            android:inputType="textPersonName"
+                            android:text="Abcdef"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilLastName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/white">
+
+                        <EditText
+                            android:id="@+id/etLastName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/white"
+                            android:drawableEnd="@drawable/username"
+                            android:drawableRight="@drawable/username"
+                            android:gravity="center_vertical"
+                            android:hint="@string/lastName"
+                            android:inputType="textPersonName"
+                            android:text="xyzu"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lnName"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="@dimen/_20sdp">
+
+                    <TextView
+                        android:id="@+id/tvCountryCode"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:drawableBottom="@drawable/line_image"
+                        android:gravity="center"
+                        android:text="+91"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_12ssp" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilmobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/white">
+
+                            <!-- <ImageView
+                                 android:id="@+id/phoneIcon"
+                                 android:layout_width="@dimen/_15sdp"
+                                 android:layout_height="@dimen/_15sdp"
+                                 android:background="@drawable/phone_icon" />-->
+
+
+                            <EditText
+                                android:id="@+id/etMobileNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:drawableEnd="@drawable/mobile"
+                                android:drawableRight="@drawable/mobile"
+                                android:gravity="center_vertical"
+                                android:hint="@string/phone_number"
+                                android:inputType="phone"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12ssp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+                <!--    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_below="@+id/lnName"
+                        android:textColorHint="@color/white">
+
+                        <EditText
+                            android:id="@+id/etUserName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:backgroundTint="@color/white"
+                            android:drawableEnd="@drawable/username"
+                            android:drawableRight="@drawable/username"
+                            android:gravity="center_vertical"
+                            android:hint="@string/userName"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+                    </android.support.design.widget.TextInputLayout>-->
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearMobile"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColorHint="@color/white">
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:backgroundTint="@color/white"
+                        android:drawableEnd="@drawable/email"
+                        android:drawableRight="@drawable/email"
+                        android:gravity="center_vertical"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tilEmail"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColorHint="@color/white">
+
+                    <EditText
+                        android:id="@+id/etCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:backgroundTint="@color/white"
+                        android:drawableEnd="@drawable/ic_location_on_black_24dp"
+                        android:drawableRight="@drawable/ic_location_on_black_24dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/city"
+                        android:focusable="false"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tilCity"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColorHint="@color/white">
+
+                    <tandoori.resturant.mobile.ShowAndHidePassword.ShowHidePasswordEditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:backgroundTint="@color/white"
+                        android:drawableEnd="@drawable/ic_visibility_black_24dp"
+                        android:drawableRight="@drawable/ic_visibility_black_24dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:text="12345678"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        tools:ignore="HardcodedText" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tilPassword"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColorHint="@color/white">
+
+                    <tandoori.resturant.mobile.ShowAndHidePassword.ShowHidePasswordEditText
+                        android:id="@+id/etConfirmPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:backgroundTint="@color/white"
+                        android:drawableEnd="@drawable/ic_visibility_black_24dp"
+                        android:drawableRight="@drawable/ic_visibility_black_24dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/confirmPassword"
+                        android:inputType="textPassword"
+                        android:text="12345678"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp"
+                        tools:ignore="HardcodedText" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/tvTermsAndConditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tilConfirmPassword"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:layout_marginRight="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_2sdp"
+                    android:text="@string/termsAndConditions"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_9ssp" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvTermsAndConditions"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_30sdp">
+
+                    <Button
+                        android:id="@+id/btRegistration"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:background="@drawable/shape"
+                        android:text="@string/signUp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <TextView
+                        android:id="@+id/tvAlreadyRegistered"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btRegistration"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:padding="@dimen/_2sdp"
+                        android:text="@string/AlreadyRegistered"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_9ssp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/shape_image" />
+
+
+                <ImageView
+                    android:id="@+id/imGooglePlus"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_above="@+id/imFacebook"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:src="@drawable/g_icon" />
+
+                <ImageView
+                    android:id="@+id/imFacebook"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_90sdp"
+                    android:layout_marginStart="@dimen/_90sdp"
+                    android:src="@drawable/f_icon" />
+
+            </RelativeLayout>
+
+            <!--
+                        <ImageView
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="@dimen/_55sdp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@+id/relativeMain"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/greeeshape_image" />
+            -->
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

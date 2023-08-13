@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/green</item>
+        <item name="colorAccent">@color/green</item>
+    </style>
+    <style name="Theme.App.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/divider</item>
+        <item name="colorControlActivated">@color/green</item>divider
+        <item name="colorControlHighlight">@color/green</item>
+    </style>
+
+    <style name="MyTabLayout" parent="Base.Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MyTabTextAppearance</item>
+    </style>
+
+    <style name="MyTabTextAppearance" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+        <style parent="@android:style/Widget.Spinner" name="SpinnerwithNoArrow">
+            <item name="android:background">@android:drawable/edit_text</item>
+        </style>
+    <style name="CardWidgetStyle" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:background">#FFFFFF</item>
+        <item name="editTextStyle">@style/EditTextOverride</item>
+        <item name="android:editTextStyle">@style/EditTextOverride</item>
+    </style>
+
+    <style name="EditTextOverride" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textColorHint">@color/grey</item>
+    </style>
+    <declare-styleable name="AndroidLikeButton">
+        <attr name="dot_color_1"       format="color"/>
+        <attr name="dot_color_2"       format="color"/>
+        <attr name="circle_startColor" format="color"/>
+        <attr name="circle_endColor"   format="color"/>
+        <attr name="like_icon"         format="reference"/>
+        <attr name="unlike_icon"       format="reference"/>
+        <attr name="liked"             format="boolean"/>
+        <attr name="dot_active"        format="boolean"/>
+        <attr name="circle_active"     format="boolean"/>
+    </declare-styleable>
+    <style name="AppTheme1" parent="@style/Theme.AppCompat.Light.NoActionBar"/>
+    <style name="RadioButtonTheme" parent="@style/AppTheme">
+        <item name="colorControlActivated">@color/green</item>
+        <item name="colorControlNormal">@color/grey</item>
+    </style>
+</resources>
